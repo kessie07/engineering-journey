@@ -1,0 +1,117 @@
+# 30 days of Python Challenge
+# Day 2: 30 Days of Python Programming
+
+#Level 1
+# first_name = "Jaskirat"
+# last_name = "Kaur"
+# full_name = first_name + " " + last_name #string concatenation
+# Country = "India"
+# city = "Chandigarh" 
+# age = 21
+# year = 2026
+# is_married = False
+# is_true = True
+# is_light_on = True
+
+# education, is_student, skills, goal = "B.Tech", True, ["Python", "JavaScript", "Java", "AI/ML"], "To become a successful  AI/ML and software engineer"
+# print(f"Hey, I am {full_name}. I am from {city}, {Country}. I am {age} years old. I am a student: {is_student}. My highest education level is: {education}. My skills are: {skills}. My goal is: {goal}.")
+
+# #Level 2
+# import math
+
+
+# print(type(first_name)) #string
+# print(type(last_name)) #string
+# print(type(full_name)) #string
+# print(type(Country)) #string
+# print(type(city)) #string
+# print(type(age)) #int
+# print(type(year)) #int
+# print(type(is_married)) #boolean
+# print(type(is_true)) #boolean
+# print(type(is_light_on)) #boolean
+# print(type(education)) #string
+# print(type(is_student)) #boolean
+# print(type(skills)) #list
+# print(type(goal)) #string
+
+# print(len(first_name)) #length of first_name
+# print(len(last_name)) #length of last_name
+# if(len(first_name) > len(last_name)):
+#     print(f"first_name is greater in length than last_name")
+# else:
+#     print(f"last_name is greater in length than first_name")
+
+# num_one = 5
+# num_two = 4
+# total = num_one + num_two
+# diff = num_one - num_two
+# product = num_one * num_two
+# division = num_one / num_two
+# remainder = num_one % num_two
+# power = num_one ** num_two
+# floor_division = num_one // num_two
+
+# import math
+# radius1 = 30
+# area_of_circle = math.pi * radius1 ** 2
+# circumfrence_of_circle = 2 * math.pi * radius1
+# print(f"The area of the circle with radius {radius1} is: {round(area_of_circle, 2)} cm²")
+# radius2 = float(input("Enter the radius of the circle: "))
+# area_of_circle2 = math.pi * radius2 ** 2
+# print(f"The area of the circle with radius {radius2} is: {round(area_of_circle2, 2)} cm²")
+# input_first_name = input("Enter your first name: ")
+# input_last_name = input("Enter your last name: ")
+# input_country = input("Enter your country: ")
+# input_age = int(input("Enter your age: "))
+
+#DAY 3:
+import math
+
+
+# age = int(input("Enter your age: "))
+# height = float(input("Enter your height in meters: "))
+# complex_num = complex(input("Enter a complex number (in the form a+bj): "))
+
+# base = float(input("Enter the base of the triangle: "))
+# height_triangle = float(input("Enter the height of the triangle: "))
+# area_of_triangle = 0.5 * base * height_triangle
+
+# side_a = float(input("Enter the length of side a of the triangle: "))
+# side_b = float(input("Enter the length of side b of the triangle: "))
+# side_c = float(input("Enter the length of side c of the triangle: "))
+# perimeter_of_triangle = side_a + side_b + side_c
+
+# length = float(input("Enter the length of the rectangle: "))
+# width = float(input("Enter the width of the rectangle: "))
+# area_of_rectangle = length * width
+# perimeter_of_rectangle = 2 * (length + width)
+
+# radius = float(input("Enter the radius of the circle: "))
+# area_of_circle = math.pi * radius ** 2
+# circumference_of_circle = 2 * math.pi * radius
+
+# linear equation: y = 2x - 2
+# Equation: y = 2x - 2
+# 1. Identify Slope (m) and Y-intercept (b) from y = mx + b
+slope = 2
+y_intercept = -2
+# 2. Calculate X-intercept
+# At the x-intercept, y = 0. 
+# Solving 0 = 2x - 2 for x gives: 2x = 2 -> x = 1
+# x_intercept = -y_intercept / slope  # or simply 2/2
+# print(f"Slope: {slope}")
+# print(f"Y-intercept: {y_intercept}")
+# print(f"X-intercept: {x_intercept}")   
+
+#Euclidean distance is the straight-line distance between two points in Euclidean space.
+#It is derived from the Pythagorean theorem and represents the shortest path between two coordinates.
+# Defintion and formula:
+# The Euclidean distance between two points (x1, y1) and (x2, y2) in a 2D space is given by:
+# d = √((x2 - x1)² + (y2 - y1)²), which generalizes to n-dimensions for vectors A and B as:
+# d = √(Σ(Ai - Bi)²) for i = 1 to n, where Ai and Bi are the coordinates of points A and B in n-dimensional space.
+
+# x1, y1, x2, y2 = 2, 2, 6, 10
+# print("Slope =", int((y2 - y1) / (x2 - x1))) # 2
+# print(f"Euclidean distance = {((x2-x1)**2 + (y2-y1)**2) ** 0.5:.2f}") # 8.94
+# print(2 == int((y2 - y1) / (x2 - x1))) # True

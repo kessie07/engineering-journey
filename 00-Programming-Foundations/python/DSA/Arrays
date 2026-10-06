@@ -1,0 +1,151 @@
+# # STATIC ARRAYS: arrays with fixed size, having contiguous block of memory that stores elements of same datatype.
+# # Operations:
+# # 1. Read/write at index - O(1)
+# # 2. Insert at end - O(1) on average in Python lists.
+
+
+# def create_array():                                      # Defines the function for operation 1.
+
+#     capacity = int(input("Enter the array size: "))      # Gets the array capacity as an integer.
+#     arr = [0] * capacity                                  # Creates an array filled with zeros.
+
+#     index = int(input(f"Enter an index (0 to {capacity - 1}): ")) # Gets the position for 5.
+#     arr[index] = 5                                        # Writes 5 at the selected index.
+
+#     return arr, capacity                                  # Returns the array and its capacity.
+
+# # Operation 2: add a new number after the existing elements.
+# def insert_at_end(arr, value1):                            # Defines the function for operation 2.
+#     arr.append(value1)                                     # Adds value as a new last element.
+#     return arr                                             # Returns the array with the inserted value.
+
+
+# # operation 3: remove from the end   -  O(1)
+# def remove_at_end(arr, value1):
+#     if arr and arr[-1] == value1:                          # Checks that the array ends with value1.
+#         arr.pop()                                          # Removes the last element from the array.
+#     return arr                                             # Returns the array after removal.
+
+# # operation 4: insert at index i(middle)  -  O(n)
+#     # shift the elements right to create an empty position
+#     # Why right? because if you shift left, u'd overwrite elements before you've moved them.
+#     # Always shift from the end backward when inserting.
+
+# def insert_at_middle(arr, value2):
+#     index = len(arr) // 2                                 # Calculates the middle index.
+#     arr.append(0)                                          # Adds space for one new element.
+#     for i in range(len(arr) - 1, index, -1):               # Visits positions from right to left.
+#         arr[i] = arr[i - 1]                                # Shifts each element one position right.
+#     arr[index] = value2                                    # Places value2 at the requested index.
+#     return arr                                             # Returns the array after insertion.
+
+# # i: the position where the new value will be inserted.
+# # index: the temporary position used while shifting elements.
+
+
+
+
+# def main():                                               # Defines the main function.
+#     arr, capacity = create_array()                        # Runs operation 1 and receives both values.
+#     print("After operation 1:", arr)                     # Displays the array containing 5.
+#     arr = insert_at_end(arr, 8)                           # Runs operation 2 and inserts 8 at the end.
+#     print("After operation 2:", arr)                      # Displays the updated array.
+#     arr = remove_at_end(arr, 8)                            # Runs operation 3 and removes 8 from the end.
+#     print("After operation 3:", arr)                      # Displays the array after removal.
+#     arr = insert_at_middle(arr, 6)                         # Runs operation 4 and inserts 6 in the middle.
+#     print("After operation 4:", arr)                      # Displays the array after middle insertion.
+
+# main()                                                     # Calls main() to start the program.
+
+# # 11 sept:
+# # tracing a code:
+
+
+# def has_duplicate(nums):
+#     for i in range(len(nums)):
+#         for j in range(i + 1, len(nums)):
+#             if nums[i] == nums[j]:
+#                 return True
+#     return False
+
+# print(has_duplicate([1, 2, 3]))
+# print(has_duplicate([1, 2, 3, 4, 2]))
+
+# # OPERATION ON ARRAY: SEARCH
+
+# def search_array(arr, target):
+#     return target in arr
+# return target in arr means for element in arr:
+#     if element == target:
+#         return True
+# return False
+
+# arr = list(map(int, input("Enter numbers separated by spaces: ").split()))
+# target = int(input("Enter the number to search for: "))
+
+# if search_array(arr, target):
+#     print(f"{target} was found in the array.")
+# else:
+#     print(f"{target} was not found in the array.")
+            
+# def remove_element():
+#     scores = [1, 2, 3, 5]
+#     scores.remove(5)
+# #     print(scores)
+
+# # def main():
+# #     return remove_element()
+
+# # main()
+
+# def two_sum(nums, target):
+    
+#     d = {}
+#     for i, number in enumerate(nums):
+#         needed = target - number
+
+#         if needed in d:
+#             return [d[needed], i ]
+
+#         d[needed] = i
+#     return []
+
+# def longest_substring(string):
+#     seen = set()
+#     left = 0
+#     max_len = 0
+
+#     for right in range (len(string)):
+#         while string[right] in seen:
+#             seen.remove(string[left])
+#             left += 1
+
+#         seen.add(string[right])
+
+#         max_len = max(max_len, right - left + 1)
+#     return max_len
+
+def valid_parantheses(string):
+    stack = []      # creates an empty stack to store encountered opening parantheses
+    mapping = {
+        ")":"(",
+        "}":"{",
+        "]":"["
+    }
+
+    for char in string:
+        # check for opening parantheses
+        if char in mapping.values():
+            stack.append(char)
+
+        elif char in mapping:
+            if not stack:
+                return False
+            top = stack.pop()
+            if top != mapping[char]:
+                return False
+            
+    return len(stack) == 0
+
+print ( valid_parantheses("[{()}"))
+print ( valid_parantheses("[{}]"))

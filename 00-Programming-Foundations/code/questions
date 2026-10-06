@@ -1,0 +1,48 @@
+# # n = int(input("Enter n: "))
+# # i = 2
+# # sum = 0
+# # while(i <= n):
+# #     sum = sum + i
+# #     i += 2 
+
+# # print(f"Sum of even numbers from 2 to {n} is: {sum}")        
+
+# # num = int(input("Enter the number: "))  #INPUT - the original no. given by the user
+
+# # i = num     # i — the CURRENT NUMBER BEING PROCESSED
+# # fact = 1    # fact — the FACTORIAL of the number; why 1? becoz we're multiplying.
+
+# # while i >= 1:
+# #     fact *= i
+# #     i -= 1
+
+# # print(fact)
+
+# num = int(input("Enter the number: "))
+# product = 1
+
+# while num > 0:
+#     digit = num % 10
+#     product = product * digit
+#     num //= 10
+
+# print(product)
+
+# n = int(input("Enter n: "))
+# i = 1
+# sum = 0
+
+# while i <= n:
+#         sum += i
+#         i+=2 
+
+# print (sum)
+
+num = int(input("Enter num: "))
+count = 0
+
+while num > 0:
+    count += 1
+    num //= 10
+
+print(count)

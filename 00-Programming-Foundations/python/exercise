@@ -1,0 +1,228 @@
+
+# # # Printing the area of a rectangle
+# # # Formula: Area = length * width
+# # # length = float(input("Length: "))
+# # # width = float(input("Width: "))
+# # # area = length * width
+# # # print(f"The area of the rectangle is: {area} cm².")
+
+# # # SHOPPING CART PROGRAM
+# # # This program calculates the total cost of items in a shopping cart.
+# # # we need to take the price and quantity of each item as input from the user, calculate the total cost, and display it.
+# # # item = input("What would you like to purchase?: ")
+# # # price = float(input("Price of the item?: "))
+# # # quantity = int(input("How many items would you like to purchase?: "))
+# # # total_cost = price * quantity
+
+# # # print(f"You've bought {quantity} x {item}(s) at ${price:.2f} each.")
+# # # print(f"The total cost of {quantity} {item}(s) is: ${total_cost:.2f}.")
+
+# # # MADLIBS GAME
+# # # This program takes user input and generates a funny story.
+# # # we create a story by filling in blanks with random words provided by the user.
+
+
+# # noun = input("Enter a noun(person, place, or thing): ")
+# # adjective1 = input("Enter an adjective(describing word): ")
+# # adjective2 = input("Enter another adjective(describing word): ")
+# # proper_noun1 = input("Enter a proper noun(person's name): ")
+# # proper_noun2 = input("Enter another proper noun(person's name): ")
+# # verb = input("Enter a verb: ")
+
+# # print(f"I went to watch a {noun} movie with my family.")
+# # print(f"The movie was so {adjective1} and I'm glad it met my expectations.")
+# # print(f"I could've never expected the appearance of {proper_noun1}, and I guess this was the most {adjective2} part of the movie.")
+# # print(f"Well, I do agree that a {proper_noun2} movie never {verb} the fans.")
+
+# # CIRCUMFERENCE OF A CIRCLE
+# # Formula: Circumference = 2 * π * radius
+# import math 
+# # radius = float(input("Enter the radius of the circle: "))
+# # circumference = 2 * math.pi * radius
+# # print(f"The circumference of the circle with radius {radius} is: {round(circumference, 2)} cm")
+
+# #AREA OF A CIRCLE
+# # Formula: Area = π * radius²
+
+# # radius = float(input("Enter the radius of the circle: "))
+# # area1 = math.pi * radius ** 2 
+# # area2 = math.pi * pow(radius, 2) #using the pow() function to calculate the area of a circle
+# # print(f"The area of the circle with radius {radius} is: {round(area1, 1)} cm²")
+# # print(f"The area of the circle with radius {radius} is: {round(area2, 1)} cm²")
+
+# # Hypotenuse of a right-angled triangle
+# # Formula: Hypotenuse = √(base² + height²)
+
+# base = float(input("Enter the base of the triangle: "))
+# height = float(input("Enter the height of the triangle: "))
+# hypotenuse1 = math.hypot(base, height)
+# hypotenuse2 = math.sqrt(base ** 2 + height ** 2)
+# print(f"The hypotenuse of the right-angled triangle with base {base} and height {height} is: {round(hypotenuse1, 2)} cm")
+# print(f"The hypotenuse of the right-angled triangle with base {base} and height {height} is: {round(hypotenuse2, 2)} cm")
+
+# PYTHON CALCULATOR
+# This program takes two numbers and an operator as input from the user, performs the operation,
+# and displays the result.
+
+# operator = input("Enter an operator (+, -, *, /, **, %): ")
+# num1 = float(input("Enter the first number: "))
+# num2 = float(input("Enter the second number: "))
+
+# if operator == "+":
+#     result = round(num1 + num2)
+#     print(f"The result of {num1} {operator} {num2} is: {result}")
+# elif operator == "-":
+#     result = round(num1 - num2)
+#     print(f"The result of {num1} {operator} {num2} is: {result}")
+# elif operator == "*":
+#     result = round(num1 * num2)
+#     print(f"The result of {num1} {operator} {num2} is: {result}")
+# elif operator == "/":
+#     result = round(num1 / num2)
+#     print(f"The result of {num1} {operator} {num2} is: {result}")
+# elif operator == "**":
+#     result = round(num1 ** num2)
+#     print(f"The result of {num1} {operator} {num2} is: {result}")
+# elif operator == "%":
+#     result = round(num1 % num2)
+#     print(f"The result of {num1} {operator} {num2} is: {result}")
+# else:
+#     print(f"{operator} is not a valid operator. Please enter a valid operator (+, -, *, /, **, %).")
+
+#PYTHON WEIGHT CONVERTER
+# This program takes a weight and converts it to pounds and ounces or vice versa.
+
+# weight = float(input("Enter your weight: "))
+# unit = input("Enter the unit of weight (kg or lb): ")
+
+# if unit == "kg":
+#     weight_in_pounds = weight * 2.20462
+#     weight_in_ounces = weight * 35.274
+#     print(f"Your weight in pounds is: {round(weight_in_pounds, 2)} lb")
+#     print(f"Your weight in ounces is: {round(weight_in_ounces, 2)} oz")
+
+# elif unit == "lb":
+#     weight_in_kg = weight / 2.20462
+#     weight_in_ounces = weight * 16
+#     print(f"Your weight in kilograms is: {round(weight_in_kg, 2)} {unit}")
+#     print(f"Your weight in ounces is: {round(weight_in_ounces, 2)} {unit}")
+
+# else:
+#     print(f"{unit} is not a valid unit of weight. Please enter a valid unit (kg or lb).")
+
+
+# TEMPERATURE CONVERSION PROGRAM
+# This program takes a temperature in Celsius or Fahrenheit and converts it to the other unit.
+
+# temp = float(input("Enter the temperature: "))
+# unit = input("Enter the unit of temperature (C or F): ")
+
+# if unit == "C":
+#     temp_F = temp * 9/5 + 32
+#     print(f"The temperature in Fahrenheit is: {round(temp_F,2)} °F")
+# elif unit == "F":
+#     temp_C = (temp - 32) * 5/9
+#     print(f"The temperature in Celsius is: {round(temp_C,2)} °C")
+# else:
+#     print(f"{unit} is not a valid unit of temperature. Please enter a valid unit (C or F).")
+
+
+
+# appending a timestamp to a log file:
+# import datetime
+
+# def log_event(message):
+#     timestamp = datetime.datetime.now().isoformat()  # get current timestamp in ISO format
+#     with open("app.log", "a") as log_file:  # open the log file in append mode
+#         log_file.write(f"{timestamp} - {message}\n")  # write the timestamped message
+#         print(f"Logged event: {message}")
+#         print(f"Timestamp: {timestamp}")
+
+# def main():
+#     log_event("Application started.")
+#     log_event("Application shutting down.")
+#     default_log = "Default log message."
+#     log_event(default_log)
+
+# main()
+
+
+# file handling with exception handling:
+
+
+# def load_config(path):
+#     try:
+#         with open(path) as f:
+#             return f.read()
+#     except FileNotFoundError:
+#         print(f"Error: The file '{path}' was not found.")
+#         return None         # caller can check for None and handle it appropriately
+#     except PermissionError:
+#         print(f"Error: Permission denied when trying to read '{path}'.")
+#         return None
+
+# def main():
+#         config = load_config("config.txt")
+#         if config is not None:
+#             print("Config loaded successfully.")
+#         else:
+#             print("Failed to load config.")
+# main()
+
+
+
+# File I/O + Python Data Structures:
+# 1. Files + Lists + Strings: read file -> clean -> list -> process
+
+# Input file: names with trailing whitespace and blank lines
+# Alice
+# Bob (with tab)
+# Carol
+
+# def load_clean_names(path):
+#     names = []
+#     with open("names.txt", "a") as f:   # appeds name permanently at the end of the list
+#         f.write("David\n")
+#     with open(path) as f:
+#         for line in f:
+#             name = line.strip().lower()     # clean + normalise & skip blank lines
+#             if name:                        
+#                 names.append(name)
+#     return names
+
+# def main():
+#     names = load_clean_names("names.txt")   # since names.txt is in the same folder as exercise.py, "names.txt" is also its relative path
+#     print(names)
+
+# main()
+
+# 2. Files + Dictionaries (JSON):
+# JSON is a text format that Python parses directly into dicts/lists. This is how configuration files, API responses, and many datasets are stored.
+# So JSON is commonly used for storing and exchanging structured data.
+# A Python dictionary is a Python object. JSON is a text/data format.
+# Json can represent fairly complex application data. It can contain nested structures.
+# for file: json.load() and json.dump() and for strings: json.loads() and json.dumps()
+import json
+
+# config.json contents:
+# {"model": "classifier", "threshold": 0.8, "version": 1}
+
+def load_config(path):
+    try:
+        with open(path) as f:
+            return json.load(f)     #json.load() reads JSON from an open file and converts it into a python object.
+    except FileNotFoundError:
+        config = {"model": "classifier", "threshold": 0.8, "version": 1}
+        with open(path, "w") as f:
+            json.dump(config, f, indent=2)      # json.dump() Converts a Python object into JSON and writes it to an open file.
+        return config
+
+config = load_config("config.json")
+print(config["threshold"])      # 0.8
+
+# save config back to file
+config["version"] +=1   # useful for tracking changes or updates
+with open("config.json", 'w') as f:
+    json.dump(config, f, indent=2)
+
+

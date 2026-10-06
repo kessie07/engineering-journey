@@ -1,0 +1,550 @@
+# # # #INTRODUCTION:
+# #Python first compiles your source code into bytecode,
+# # and then the Python Virtual Machine executes that bytecode, effectively processing your program step by step.
+# #Compilation prepares the program for execution, and execution is when the computer actually carries out the instructions.
+
+
+# # # print("I like Pancakes!")
+# # # print("They are delcious.")
+
+# # # #Arithmetic Operators: used to perform mathematical operations on numbers.c
+# # # print(2 + 3)    #addition
+# # # print(3 - 1)    #subtraction
+# # # print(2 * 3)    #multiplication
+# # # print(6 / 2)    #division
+# # # print(2 ** 3)   #exponentiation
+# # # print(3 % 2)    #modulus
+# # # print(3 // 2)   #floor division
+
+
+# # # #checking datatypes
+
+# # # print(type(10)) #int
+# # # print(type(3.14))   #float
+# # # print(type("Bruh")) #string
+# # # print(type(True))  #boolean
+# # # print(type([1, 2, 3])) #list
+# # # print(type({9.8, 3.14, 2.71})) #set
+# # # print(type((9.8, 3.14, 2.71))) #tuple
+# # # print(type(1 + 2j)) #complex
+# # # print(type({"name": "Jaskirat", "age": 21})) #dictionary
+
+# # # #VARIABLE: A variable is simply a named storage box. 
+# # # # It is used to store data values.Behaves as if it was the value it contains.
+# # # # The varibale doesn't contain the number - it contains a reference to the number i.e., it references an object in memory.
+
+# # # first_name = "Jaskirat"
+# # # last_name = "Kaur"
+# # # age = 21
+# # # distance = 5.8
+# # # is_student = True
+# # # print(first_name + " " + last_name) #concatenation
+
+# # # #f-string formatting - used for string interpolation
+# # # # The process of inserting variables into a string is called string interpolation.
+# # # # The word "interpolate" literally means: to insert something into something else.
+# # # print(f"Hello, {first_name} {last_name}!")
+# # # print(f"I am {age} years old.")
+# # # print(f"Today I ran {distance} kilometers.")
+# # # print(f"Are you a student? {is_student}")
+
+# # # #Type Casting: the process of converting a veriable from one data type to another.
+# # # #int() - converts a value to an integer
+# # # #float() - converts a value to a float
+# # # #str() - converts a value to a string
+# # # #bool() - converts a value to a boolean
+
+# # # print(type(first_name)) #string
+# # # print(type(age)) #int
+# # # print(type(distance)) #float
+# # # print(type(is_student)) #boolean
+
+# # # distance = int(distance) #converting float to int
+# # # age = float(age)
+# # # age = str(age)
+# # # first_name = bool(first_name) #converting string to boolean
+# # # print(type(distance)) 
+# # # print(type(age)) 
+# # # print(first_name)
+
+# # # # input() - used to take input from the user
+# # # # returns the entered data as a string 
+# # # education = input("What is your highest education level? ")
+# # # print(f"Your highest education level is: {education}")
+
+# # # name = input("What is your name? ")
+# # # ur_age = int(input("What is your age? "))
+# # # print(f"Hello {name}, you are {ur_age} years old.")
+# # # print(f"Next year, you will be {ur_age + 1}.")
+
+# # # #BUILT-IN MATHEMATICAL FUNCTIONS
+# # # x = 3.14
+# # # y = 4
+# # # z= 5
+
+# # # result = round(x) #rounds the number to the nearest integer
+# # # result = abs(-x) #returns the absolute value of a number
+# # # result = abs(y)
+# # # result = pow(y, z) #returns the value of y raised to the power of z
+# # # result = max(x, y, z) #returns the largest number
+# # # result = min(x, y, z) #returns the smallest number
+# # # print(result)
+
+
+# # #Mathematical functions: used to perform mathematical operations on numbers.
+# # import math # importing the math module
+
+# # print(math.pi) #returns the value of pi
+# # print(math.e) #returns the value of e
+# # print(math.sqrt(16)) #returns the square root of a number
+# # print(math.ceil(3.14)) #returns the smallest integer greater than or equal to a number
+# # print(math.floor(3.14)) #returns the largest integer less than or equal to a number
+
+# # IF-ELSE STATEMENTS: used to make decisions in a program. It allows us to execute a block of code if a condition is true, and another block of code if the condition is false.
+# #Snyntax: 
+# #   if condition:
+# #   block of code to be executed if the condition is true
+# #   else:
+# #   block of code to be executed if the condition is false   
+
+# # age = int(input("Enter your age: "))
+# # if age >=18:
+# #      print("You are eligible to vote.")
+# # else:
+# #     print("You are not eligible to vote.")
+
+# # online = True 
+# # if online:
+# #     print("You are online.")
+# # else:
+# #     print("You are offline.")
+
+
+# # OPERATORS: used to perform operations on variables and values.
+# # Assignment Operators: used to assign values to variables.
+# # x = 5 #assigning the value 5 to the variable x
+# # x += 3 #x = x + 3
+# # x -= 3 #x = x - 3
+# # x *= 3 #x = x * 3
+# # x /= 3 #x = x / 3
+# # x %= 3 #x = x % 3
+# # x **= 3 #x = x ** 3
+# # x //= 3 #x = x // 3
+# # x |= 3 #x = x | 3
+# # x &= 3 #x = x & 3
+# # x ^= 3 #x = x ^ 3
+# # x >>= 3 #x = x >> 3
+# # x <<= 3 #x = x << 3
+
+# #COMPARISON OPERATORS: used to compare two values. It returns a boolean value (True or False).
+# # print(3 > 2)     # True, because 3 is greater than 2
+# # print(3 >= 2)    # True, because 3 is greater than 2
+# # print(3 < 2)     # False,  because 3 is greater than 2
+# # print(2 < 3)     # True, because 2 is less than 3
+# # print(2 <= 3)    # True, because 2 is less than 3
+# # print(3 == 2)    # False, because 3 is not equal to 2
+# # print(3 != 2)    # True, because 3 is not equal to 2
+# # print(len('mango') == len('avocado'))  # False
+# # print(len('mango') != len('avocado'))  # True
+# # print(len('mango') < len('avocado'))   # True
+# # print(len('milk') != len('meat'))      # False
+# # print(len('milk') == len('meat'))      # True
+# # print(len('tomato') == len('potato'))  # True
+# # print(len('python') > len('dragon'))   # False
+
+# # In addition to the above comparison operator Python uses:
+# # is: Returns true if both variables are the same object(x is y)
+# # is not: Returns true if both variables are not the same object(x is not y)
+# # in: Returns True if the queried list contains a certain item(x in y)
+# # not in: Returns True if the queried list doesn't have a certain item(x not in y)
+
+# # Comparing something gives either a True or False
+
+# # print('True == True: ', True == True)
+# # print('True == False: ', True == False)
+# # print('False == False:', False == False)
+
+# #  LOGICAL OPERATORS: evaluate multiple conditions (or, and, not)
+# #                     or = at least one condition must be true
+# #                     and = both conditions must be true
+# #                     not = inverts the condition(not False, not True)
+
+# #OR operator:
+# # temp = float(input("Enter the temperature: "))
+# # is_raining = False
+# # if temp == 24:
+# #     is_raining = True
+# # if temp > 35 or temp < 5 or is_raining:
+# #     print("The weather is not suitable for outdoor activities.")
+# # else:
+# #     print("The weather is suitable for outdoor activities.")
+
+# #AND operator and NOT operator:
+# # temp = float(input("Enter the temperature: "))
+# # is_snowing = True  
+
+# # if temp <= 0 and is_snowing:
+# #     print("The weather is cold and it's snowing.")
+# # elif temp <= 0 and not is_snowing:
+# #     print("The weather is freezing but not snowing.")
+# # elif 0 < temp <= 15 and is_snowing:
+# #     print("The weather is cold and it's snowing (unusual for this temp).")
+# # elif 0 < temp <= 15 and not is_snowing:
+# #     print("The weather is cold but it's not snowing.")
+# # elif 15 < temp <= 25 and is_snowing:
+# #     print("The weather is moderate but it's snowing?")
+# # elif 15 < temp <= 25 and not is_snowing:
+# #     print("The weather is moderate and it's not snowing.")
+# # elif temp > 25 and is_snowing:
+# #     print("The weather is warm and it's snowing?")
+# # elif temp > 25 and not is_snowing:
+# #     print("The weather is warm and it's not snowing.")
+# # else:
+# #     # Fallback for any edge case or input error
+# #     print("Weather state undefined.")
+
+
+# #Conditional expressions (ternary operator): used to evaluate a condition and return a value based on the result of the condition.
+# #Syntax: value_if_true if condition else value_if_false
+# #A one-line shorthand for an if-else statement.
+# #It allows you to assign a value to a variable based on a condition in a single line of code.
+
+# # age = int(input("Enter your age: "))
+# # status = "You are an adult." if age >= 18 else "You are not an adult."
+# # print(status)
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# #FILE I/O:
+
+# # open() - used to open a file in Python. It takes two arguments: the name of the file and the mode in which the file is opened.
+# # Syntax: open("filename.txt", "mode")
+# # mode string. It tells Python — and the OS — what you intend to do with the file. Wrong mode = data loss or errors.
+
+# # HOW WE COULD USE THIS CLOSER TO REAL APPLICATIONS WORKING:
+# # Example: maintain a globally sorted persistent list of names across multiple runs of the program. Each time the program is run, it appends new names to the file and maintains the sorted order.
+# # READ
+# #  ↓
+# # LOAD EXISTING STATE
+
+# # MODIFY
+# #  ↓
+# # ADD / CLEAN / SORT
+
+# # WRITE
+# #  ↓
+# # SAVE NEW STATE
+
+
+from ast import main
+from multiprocessing import process
+
+
+names = []
+
+# # Read existing names from the file
+try:
+    with open("names.txt", "r") as file:    # "r" - read mode, opens an existing file; if it doesn't exists, it raises a FileNotFoundError
+        for line in file:
+            names.append(line.strip().title())
+except FileNotFoundError:
+    pass
+
+# Get new names from the user until they type 'done'
+while True:
+    name = input("What's your name? (Type 'done' to finish) ")
+    if name.lower() == 'done':
+        break
+    
+    # Clean and capitalize the name
+    cleaned_name = name.strip().title()
+    names.append(cleaned_name)
+
+names.sort() # Sort the names alphabetically
+
+print("Sorted names:", names)
+
+# rewrite the entire list to the file
+with open("names.txt", "w") as file:    # "w" - write mode, creates a new file or overwrites an existing file
+    for name in names:
+        file.write(name + "\n") # rewrite each name on a new line in the file
+
+print("Sorted names:", names)   # Print the sorted names to the console
+
+# # "a" - append mode, opens an existing file for writing; if it doesn't exist, it creates a new file. The new data is added to the end of the file without overwriting the existing content.
+# # "b" - binary mode, used to read or write binary files (e.g., images, audio files). It can be combined with other modes (e.g., "rb" for reading a binary file, "wb" for writing a binary file).
+# # "x" - exclusive creation mode, creates a new file and opens it for writing; if the file already exists, it raises a FileExistsError.
+# # "+" - read and write mode, opens a file for both reading and writing. If the file doesn't exist, it creates a new file. If it exists, it allows you to read from and write to the same file.
+# # "t" - text mode, used to read or write text files. It is the default mode and can be combined with other modes (e.g., "rt" for reading a text file, "wt" for writing a text file).
+# # "s" - secure mode, used to open a file in a secure manner, preventing other processes from accessing the file while it is open. It can be combined with other modes (e.g., "rs" for reading a secure file, "ws" for writing a secure file).
+# # "m" - memory-mapped mode, used to create a memory-mapped file object that allows you to access the contents of a file as if it were a bytearray in memory. It can be combined with other modes (e.g., "rm" for reading a memory-mapped file, "wm" for writing a memory-mapped file).
+# # "z" - compressed mode, used to read or write compressed files (e.g., gzip, zip). It can be combined with other modes (e.g., "rz" for reading a compressed file, "wz" for writing a compressed file).
+# # "c" - create mode, used to create a new file and open it for writing. If the file already exists, it raises a FileExistsError. It can be combined with other modes (e.g., "wc" for writing a new file, "rc" for reading a new file).
+# # "h" - hidden mode, used to open a file in a hidden manner, preventing it from being visible in the file system. It can be combined with other modes (e.g., "rh" for reading a hidden file, "wh" for writing a hidden file).
+# # "d" - delete mode, used to delete a file after it has been closed. It can be combined with other modes (e.g., "rd" for reading a file and deleting it afterward, "wd" for writing a file and deleting it afterward).
+# # "o" - overwrite mode, used to overwrite an existing file with new content. It can be combined with other modes (e.g., "wo" for writing and overwriting a file, "ro" for reading and overwriting a file).
+# # "f" - flush mode, used to flush the file buffer after each write operation, ensuring that the data is immediately written to the file. It can be combined with other modes (e.g., "wf" for writing and flushing a file, "rf" for reading and flushing a file).
+
+# # CONTEXT MANAGER(the with keyword): guarantees that resources are properly managed, ensuring that files are closed after their block of code is executed, even if an error occurs. It simplifies file handling and reduces the risk of resource leaks.
+# # the with statement uses Python's context manager protocol. When you enter the with block, Pyhton calls _enter_() method of the file object, which opens the file and returns a file object. When you exit the with block, Python calls the _exit_() method of the file object, which closes the file automatically.
+
+# # Why forgetting close() is dangerous: 
+#   # An unclosed file keeps an OS file descriptor open. On long-running programs, this causes resource leaks. with open() eliminates this risk entirely.
+#     # file = open(...) + file.close() -	No auto close; 	Exception safe? No — if exception fires before close(), file leaks!	
+#     # with open(...) as file: -	auto close ; Exception safe? Yes — __exit__ always runs!
+
+# # read vs write vs append:
+#     # "r"- read mode: Open for reading. File must exist. Cursor starts at beginning. Default mode if you omit the second argument.
+#         # Safe — no write permission
+
+#     # "w"- write mode: Open for writing. Creates file if it doesn't exist. Truncates existing content immediately — even before you write anything.
+#         # Dangerous — destroys existing data
+
+#     # "a"- append mode: Open for writing. Creates file if it doesn't exist. Appends to existing content.
+#         # Safe — for existing data
+
+# # r, w, a handle text (strings, UTF-8 by defualt)
+# # examples: .txt, .csv, .json, .xml, .html, .py, .md
+# # rb, wb, ab handle binary (bytes)
+# # examples: .jpg, .png, .mp3, .mp4, .pdf, .zip, .tar, .gz [images,audio,pdfs,model wts]
+
+# #READING FILES:
+# # three ways to read a file:
+# # 1. read() - reads the entire file as a single string
+#             # returns one big string of entire file.
+#             # loads entire file into RAM - dangerous for large files.
+#             # Use it for small files, when you need full text at once.
+# # 2. readline() - reads a single line from the file
+#             # returns one line as a string(including \n).
+#             # returns empty string when EOF is reached, i.e., when file is exhausted.
+#             # Use it when you need to manually control line reading, e.g., in a loop or when you want to process one line at a time.
+# # 3. readlines() - reads the entire file and returns a list of lines
+#             # returns a list of strings, one for each line (including \n).
+#             # loads entire file into RAM - dangerous for large files.
+#             # Use it when you need to process all lines as a list upfront, e.g., for filtering or mapping.
+# # 4. for line in file - iterates over the file object line by line
+#             # one line per iteration, lazy loading, memory efficient.
+#             # best for large files - doesn't load entire file into RAM at once.
+#             # use it when processing large files line by line efficiently, e.g., for streaming or filtering.
+
+
+# read() example:
+
+with open("names.txt", "r")as file:  #"r" is the default mode too.
+    content = file.read() # reads the entire file as one single string
+    print("Content of the file:\n",content)   
+    print(type(content)) # <class 'str'>
+
+# readline() example:
+
+with open("names.txt", "r") as file:
+    first = file.readline() # reads the first line of the file
+    second = file.readline() # reads the second line of the file
+    print("First line:", first)
+    print("Second line:", second)
+    # cursor advances after each call to readline(), so the next call will read the next line.
+
+# readlines() example:
+with open("names.txt", "r") as file:
+    lines = file.readlines() # reads the entire file and returns a list of lines
+    print("Lines in the file:", lines)
+# lines is a list - you can index it, slice it, loop it, etc.
+    for line in lines:
+        print(line, end='') # end='' prevents double newline
+print("\nThird line:", lines[2]) # prints the third line in the file (index 2)
+
+
+# for line in file example: direct iteration over the file object
+# actual processing logic can be added in the loop as needed
+with open("names.txt") as file:
+    for line in file: # iterates over the file object line by line
+        print(line.strip()) # strip() removes leading/trailing whitespace, including \n
+
+
+
+# WRITING AND APPENDING:
+# write() takes a string argument and writes it exactly as given. It does not add a newline automatically.You must add \n yourself.
+    # write() overwrites the entire file if it already exists. If the file doesn't exist, it creates a new one.
+    # write() returns the number of characters written, which can be useful for error checking or logging.
+# append() is not a method of the file object.
+    # Instead, you open the file in append mode ("a") and then use write() to add content to the end of the file. 
+    # It does not overwrite existing content.
+
+# example: writing multiple lines to a file using write() in write mode
+with open("names.txt","w") as file:  # "w" mode overwrites the file if it exists, or creates a new one if it doesn't
+    file.write("Alice\n")  # write() does not add a newline automatically so \n is used.
+    file.write("Bob\n")
+    file.write("Charlie\n")
+    print("Wrote 3 names to the file.")
+
+# example: writing a list of items
+names = ["Alice", "Bob", "Charlie"]
+
+with open("names.txt", "w") as file:
+    for name in names:
+        file.write(name + "\n")  # write each name on a new line
+    print("Wrote names from the list to the file.")
+
+# example: appending to a log
+import datetime
+
+def log_event(message):
+    timestamp = datetime.datetime.now().isoformat()  # get current timestamp in ISO format
+    with open("app.log", "a") as log_file:  # open the log file in append mode
+        log_file.write(f"{timestamp} - {message}\n")  # write the timestamped message
+        print(f"Logged event: {message}")
+        print(f"Timestamp: {timestamp}")
+
+def main():
+    log_event("Application started.")
+    log_event("Application shutting down.")
+    default_log = "Default log message."
+    log_event(default_log)
+    
+main()
+
+# write() vs print():
+# write() is a method of the file object, used to write strings to a file. It does not add a newline automatically, and it returns the number of characters written.
+# print() is a built-in function that outputs to the console by default. It adds a newline automatically unless specified otherwise, and it can take multiple arguments of different types, converting them to strings as needed.
+# main difference: write() is for file output, while print() is for console output.
+# write() is more efficient for writing large amounts of data to a file, while print() is more convenient for quick debugging and console output.
+# write() does not add a newline automatically, while print() does. You can control this behavior in print() using the end parameter.
+# write() does not support multiple arguments or automatic type conversion, while print() does. You need to convert non-string data to strings before using write().
+# write() does not support formatting options like f-strings or the sep parameter, while print() does. You can use string formatting to prepare the string before writing it to a file with write().
+
+# FILE I/O + EXCEPTION HANDLING:
+# File operations touch the filesystem and OS, which means they depend on things outside Python's control: 
+# the file might not exist, you might not have permission, the disk could be full.
+# These are predictable, expected failures — handle them explicitly.
+
+# Exceptions, when it fires: 
+# 1. FileNotFoundError: Raised when trying to open a file that does not exist in read mode.
+# 2. PermissionError: Raised when trying to open a file without the necessary permissions(you lack read/write access).
+# 3. IsADirectoryError: Raised when trying to open a directory as if it were a file or path points to a directory instead of a file.
+# 4. UnicodeDecodeError: Raised when trying to read a file with an incompatible encoding, e.g., reading a binary file as text or file isn't valid UTF-8 text.
+# 5. IOError: A more general error that can occur during file operations, such as reading or writing to a file. It can be raised for various reasons, including hardware failures or issues with the underlying file system.
+# 6. OSError: A more general error that can occur during file operations, including issues with the operating system, such as file system errors or problems with the underlying hardware.
+# OS vs IOError: In Python 3, IOError is an alias for OSError. They are essentially the same exception class, and both can be used to catch file-related errors. In Python 2, IOError was a separate exception class, but in Python 3, it has been merged into OSError for consistency.
+
+# How to handle these exceptions:
+# 1.FileNotFoundError: Use a try-except block to catch the exception and provide fallback or clear message
+# 2.PermissionError: Catch the exception and inform the user about the permission issue, or request elevated permissions if appropriate.
+# 3.IsADirectoryError: Catch the exception and inform the user that they are trying to open a directory as a file/ validate path type first.
+# 4.UnicodeDecodeError: 
+    # Open with encoding = 'utf-8', errors = 'ignore' or 'replace' to handle invalid characters, or detect the file's encoding before reading.
+    # or use a library like chardet to detect the file's encoding and open it accordingly.
+# 5.IOError: Catch the exception and provide a generic error message, or log the error for further investigation.
+# 6.OSError: Catch the exception and provide a generic error message, or log the error for further investigation.
+
+# example: handling FileNotFoundError and PermissionError
+def load_config(path):
+    try:
+        with open(path) as f:
+            return f.read()
+    except FileNotFoundError:
+        print(f"Error: The file '{path}' was not found.")
+        return None         # caller can check for None and handle it appropriately
+    except PermissionError:
+        print(f"Error: Permission denied when trying to read '{path}'.")
+        return None
+
+def main():
+        config = load_config("config.txt")
+        if config is not None:
+            print("Config loaded successfully.")
+        else:
+            print("Failed to load config.")
+
+main()
+
+# Bad: catch-all with pass
+    # except Exception: pass
+
+    # This silently swallows every error — including programming bugs like AttributeError, TypeError.
+    # You'll never know something went wrong.
+
+#  Good: catch specific exceptions
+    # Catch FileNotFoundError specifically.
+    # Let unexpected errors propagate — they're bugs, not expected failures. Visibility into bugs is essential.
+
+# Hence, Catch expected problems. Don't hide unexpected bugs.
+
+
+
+# File I/O + Python Data Structures:
+# 1. Files + Lists + Strings: read file -> clean -> list -> process
+
+# Input file: names with trailing whitespace and blank lines
+# Alice
+# Bob (with tab)
+# Carol
+
+def load_clean_names(path):
+    names = []
+    with open(path) as f:
+        for line in f:
+            name = line.strip().lower()     # clean + normalise & skip blank lines
+            if name:                        
+                names.append(name)
+    return names
+
+# 2. Files + Dictionaries (JSON):
+# JSON is a text format that Python parses directly into dicts/lists. This is how configuration files, API responses, and many datasets are stored.
+# So JSON is commonly used for storing and exchanging structured data.
+# A Python dictionary is a Python object. JSON is a text/data format.
+# Json can represent fairly complex application data. It can contain nested structures.
+# for file: json.load() and json.dump() and for strings: json.loads() and json.dumps()
+import json
+
+# config.json contents:
+# {"model": "classifier", "threshold": 0.8, "version": 1}
+
+def load_config(path):
+    try:
+        with open(path) as f:
+            return json.load(f)     #json.load() reads JSON from an open file and converts it into a python object.
+    except FileNotFoundError:
+        config = {"model": "classifier", "threshold": 0.8, "version": 1}
+        with open(path, "w") as f:
+            json.dump(config, f, indent=2)      # json.dump() Converts a Python object into JSON and writes it to an open file.
+        return config
+
+config = load_config("config.json")
+print(config["threshold"])      # 0.8
+
+# save config back to file
+config["version"] +=1   # useful for tracking changes or updates
+with open("config.json", 'w') as f:
+    json.dump(config, f, indent=2)
+
+
+# FILES + CSV:
+# CSV = Comma-Separated Values
+# It's basically a simple way to represent tabular data.
+
+import csv
+
+with open("students.csv") as f:
+    reader = csv.DictReader(f)      # each row -> dict with column headers as keys
+    for row in reader:
+        print(row["name"], row["grade"])
+
+# For data analysis and ML, use Pandas instead:
+# import pandas as pd
+# df = pd.read_csv("students.csv")  ← much more powerful
+
+# Python's csv module gives you row-by-row access to a CSV. 
+# Pandas loads the CSV into a DataFrame — a 2D table structure with column operations, filtering, aggregation, and ML integration.
+# For AI/ML, always use Pandas for tabular data. Basic File I/O gets the data out of storage; Pandas turns it into something useful.
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# PATHS & pathlib:
+    # What is a path?:
+    # path is a string that represents the location of a file or directory in the file system.
+    # It can be absolute (full path from root) or relative (from current working directory). Paths are used to locate and access files and directories for reading, writing, or executing.
+
+    # Pathlib?:
+    # pathlib is a module in Python that provides an object-oriented interface for working with file system paths. 
+    # It allows you to manipulate and interact with file paths in a more intuitive and platform-independent way compared to traditional string-based path manipulation.
+
+    # WHY pathlib over string paths?:
+    # String-based paths like "data/raw/train.csv" break across operating systems (Windows uses \, Unix uses /). 
+    # They're hard to manipulate safely. pathlib. Path solves this with an object-oriented interface.
